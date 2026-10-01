@@ -1,0 +1,127 @@
+apiVersion: digital-employee/v1
+kind: DigitalEmployee
+metadata:
+  id: de_indie_seo_content_assistant
+  name: SEO 内容矩阵助理
+  alias: 独立站增长助理
+  repo: de-indie-seo-content-assistant
+  card_no: 4.4.3
+  group: indie
+  group_label: 独立开发者
+  phase: P1
+  complexity: M-L
+  score: 21
+  price: ¥149-299/月——客单价潜力最强，对标 SurferSEO $89/月以 1/3 价格做全链路
+  channels:
+  - GitHub
+  - Dify Marketplace
+  - 腾讯WorkBuddy Skill市场
+  - 千问办公
+  license: Proprietary
+  version: 1.0.0
+spec:
+  positioning: 出海独立站"调研→写作→发布→监控"的 SEO 全链路闭环助理
+  users: 依赖 Google SEO 获客的出海工具站/SaaS 开发者（约占群体 1/3）
+  boundary: 做：关键词调研、内容差距分析、大纲与文章产出、内链建议、排名监控；不做：黑帽 SEO（采集站群/伪原创堆砌）、保证排名承诺
+  kpi: 月均产出 SEO 文章 ≥8 篇；目标词 90 天内进入 Top20 比例；自然搜索流量环比
+  roi_summary: 月省约 30h ≈ ¥2400 + 流量增量，回报比约 8-16 倍
+  demand_refs:
+  - D22
+  - D01
+  demand_support: 充分
+  demand_evidence: 中
+runtime:
+  system_prompt: persona/system-prompt.md
+  boundary: persona/boundary.md
+  kpi: persona/kpi.md
+deliverables:
+  skills:
+  - slug: internal-link-matcher
+    name: 内链配对
+    kind: private
+    path: skills/internal-link-matcher
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: keyword-clustering
+    name: 关键词聚类
+    kind: private
+    path: skills/keyword-clustering
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: outline-generator
+    name: 大纲生成
+    kind: private
+    path: skills/outline-generator
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: programmatic-seo-page-generator
+    name: 程序化 SEO 页面生成
+    kind: private
+    path: skills/programmatic-seo-page-generator
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: rank-volatility-alert
+    name: 排名波动预警
+    kind: private
+    path: skills/rank-volatility-alert
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: serp-analysis
+    name: SERP 分析摘要
+    kind: private
+    path: skills/serp-analysis
+    version: 1.0.0
+    maturity: implemented
+  workflows:
+  - slug: wf-indie-seo-keyword-research
+    name: 关键词调研
+    path: workflows/wf-indie-seo-keyword-research
+    version: 1.0.0
+    phase: P1
+    calls:
+    - keyword-clustering
+  - slug: wf-indie-seo-serp-analysis
+    name: 竞品内容差距分析
+    path: workflows/wf-indie-seo-serp-analysis
+    version: 1.0.0
+    phase: P1
+    calls:
+    - serp-analysis
+  - slug: wf-indie-seo-outline
+    name: 文章大纲生成
+    path: workflows/wf-indie-seo-outline
+    version: 1.0.0
+    phase: P1
+    calls:
+    - outline-generator
+  - slug: wf-indie-seo-multilingual
+    name: 多语言文章产出
+    path: workflows/wf-indie-seo-multilingual
+    version: 1.0.0
+    phase: P1
+    calls:
+    - programmatic-seo-page-generator
+    - multilingual-writing
+  - slug: wf-indie-seo-draft-internal-link
+    name: 内链建议
+    path: workflows/wf-indie-seo-draft-internal-link
+    version: 1.0.0
+    phase: P2
+    calls:
+    - internal-link-matcher
+  - slug: wf-indie-seo-effect-review
+    name: 收录与排名监控
+    path: workflows/wf-indie-seo-effect-review
+    version: 1.0.0
+    phase: P2
+    calls:
+    - rank-volatility-alert
+  knowledge_base: kb/
+  connectors: connectors/bindings.yaml
+external_dependencies:
+- repo: agent-skills-core
+  version: 1.0.0
+  skills:
+  - multilingual-writing
+  resolution: external
+spec_only_dependencies: []

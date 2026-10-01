@@ -1,0 +1,36 @@
+{
+  "repo": "de-indie-seo-content-assistant",
+  "kind": "employee",
+  "run_at": "2026-09-30T23:54:25+08:00",
+  "cases": 309,
+  "passed": 309,
+  "failed": 0,
+  "by_suite": {
+    "structure": {
+      "total": 84,
+      "failed": 0
+    },
+    "contract": {
+      "total": 33,
+      "failed": 0
+    },
+    "scenario": {
+      "total": 160,
+      "failed": 0
+    },
+    "script": {
+      "total": 8,
+      "failed": 0
+    },
+    "doc": {
+      "total": 3,
+      "failed": 0
+    },
+    "compliance": {
+      "total": 21,
+      "failed": 0
+    }
+  },
+  "skipped": [],
+  "failures": []
+}
