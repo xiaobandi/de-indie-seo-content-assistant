@@ -1,0 +1,15 @@
+{
+  "name": "programmatic-seo-page-generator",
+  "title": "程序化 SEO 页面生成",
+  "kind": "skill",
+  "owner": "de-indie-seo-content-assistant",
+  "complexity": "L",
+  "phase": "P2",
+  "one_liner": "批量生成带 meta/FAQ/结构化数据的页面（模板 + 数据集 → 页面集）",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

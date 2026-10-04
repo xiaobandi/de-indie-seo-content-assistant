@@ -1,0 +1,15 @@
+{
+  "name": "wf-indie-seo-serp-analysis",
+  "title": "竞品内容差距分析",
+  "kind": "workflow",
+  "owner": "de-indie-seo-content-assistant",
+  "complexity": "M",
+  "phase": "P1",
+  "one_liner": "SERP Top10 抓取 → 内容覆盖面对比 → 差距机会清单",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

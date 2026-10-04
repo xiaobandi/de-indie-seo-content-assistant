@@ -1,0 +1,15 @@
+{
+  "name": "wf-indie-seo-effect-review",
+  "title": "收录与排名监控",
+  "kind": "workflow",
+  "owner": "de-indie-seo-content-assistant",
+  "complexity": "M",
+  "phase": "P2",
+  "one_liner": "目标词排名抓取 → 波动预警 → 内容更新建议",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

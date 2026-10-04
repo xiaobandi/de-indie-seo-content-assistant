@@ -7,6 +7,19 @@
 
 ![架构](docs/images/architecture.svg)
 
+## 效果（真实执行）
+
+![真实效果](workflows/wf-indie-seo-outline/docs/images/00-effect.png)
+
+*上图为**真实效果对比**，不是示意图：左栏是输入材料与要求，右栏是该次执行的产出原文，
+两栏取自同一次真实执行记录。*
+
+- 完整台账：[`reports/real-run/wf-indie-seo-outline.md`](reports/real-run/wf-indie-seo-outline.md)
+- 录屏与终端回放：[`workflows/wf-indie-seo-outline/docs/images/`](workflows/wf-indie-seo-outline/docs/images/)（`08-demo-run.gif` / `08-demo-run.mp4` / `04-terminal-run.png`）
+- 使用示例：[`workflows/wf-indie-seo-outline/docs/使用示例.md`](workflows/wf-indie-seo-outline/docs/使用示例.md)
+> 实测判定：**通过**　·　可用度 3/5　·　编造数字 0 处　·　红线命中 0 次 / 拦截 0 次
+
+
 **一句话**：依赖 Google SEO 获客的出海工具站/SaaS 开发者（约占群体 1/3）
 
 ---
@@ -103,7 +116,7 @@ de-indie-seo-content-assistant/
 
 | 项 | 值 |
 |---|---|
-| 技能文件数 | 166 |
+| 技能文件数 | 294 |
 | 多场景用例数 | 309 |
 | 用例通过 | 309 |
 | 验收结论 | ✅ 通过 |
