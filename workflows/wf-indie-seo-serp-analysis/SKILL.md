@@ -3,7 +3,7 @@ name: wf-indie-seo-serp-analysis
 description: >-
   SEO 内容矩阵助理 的「竞品内容差距分析」工作流：SERP Top10 抓取 → 内容覆盖面对比 → 差距机会清单。触发方式：事件（调研后）。
   当用户要完成「竞品内容差距分析」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

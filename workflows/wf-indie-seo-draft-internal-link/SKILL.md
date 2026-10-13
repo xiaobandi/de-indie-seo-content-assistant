@@ -3,7 +3,7 @@ name: wf-indie-seo-draft-internal-link
 description: >-
   SEO 内容矩阵助理 的「内链建议」工作流：站点页面扫描 → 内链机会配对 → 建议清单。触发方式：定时（每周）。
   当用户要完成「内链建议」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

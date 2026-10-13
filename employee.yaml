@@ -17,7 +17,7 @@ metadata:
   - Dify Marketplace
   - 腾讯WorkBuddy Skill市场
   - 千问办公
-  license: Proprietary
+  license: Apache-2.0
   version: 1.0.0
 spec:
   positioning: 出海独立站"调研→写作→发布→监控"的 SEO 全链路闭环助理

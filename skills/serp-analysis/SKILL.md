@@ -2,7 +2,7 @@
 name: serp-analysis
 description: >-
   摘要搜索结果页 Top 内容的结构与覆盖点，找出可切入的内容空位。当用户提到SERP分析、搜索结果分析、竞品内容分析、关键词内容差、serp analysis、search result analysis 时使用——即使用户没有直接说出上述关键词，只要意图吻合也应触发。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件。若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
 metadata:

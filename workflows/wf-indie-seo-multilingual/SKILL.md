@@ -3,7 +3,7 @@ name: wf-indie-seo-multilingual
 description: >-
   SEO 内容矩阵助理 的「多语言文章产出」工作流：按大纲成稿 → 程序化 SEO 页面要素（meta/FAQ/结构化数据）。触发方式：事件（大纲确认后）。
   当用户要完成「多语言文章产出」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
